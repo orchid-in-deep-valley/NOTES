@@ -12,4 +12,4 @@ reset 将工作区文件回退到各个版本:
 reflog 查看命令历史
 checkout:
         -- targetFileName 将工作区文件回退到版本库版本
-rm 在版本库将文件删除
+rm 在版本库将文件删除 
