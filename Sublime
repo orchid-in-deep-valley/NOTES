@@ -1,0 +1,16 @@
+ctrl+n 创建新页面
+ctrl+tab 切换页面
+tab+left 向左跳一格
+tab+right 向右填充一格
+ctrl+j 将当前行与下一行合并
+ctrl+enter 在下一行开新行
+shift+enter在上一行开新行
+shift+右键 竖行选择
+重缩进  reindent
+ctrl+f 查找
+alt+f 查找替换
+ctrl+d 多选中一个被搜索到的项s
+Goto anything:
+	:目标行	跳转到指定行
+	@寻找特殊字符串并跳转 如寻找函数
+	#寻找字符串并跳转如寻找成员
