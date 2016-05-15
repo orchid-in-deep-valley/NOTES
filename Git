@@ -20,6 +20,8 @@ remote add origin 远程库SSH 关联远程库
 
 push origin master 将本地master推送到远程库:
         -f 强制推送
+pull origin master 将远程master同步到本地库:
+
 clone gitSSH 将远程库克隆到本地
 
 branch 列出所有分支，开头有*的即当前分支:
