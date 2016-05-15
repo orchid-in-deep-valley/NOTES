@@ -1,4 +1,4 @@
- ` init 初始化一个git仓库  
+init 初始化一个git仓库  
  add 将文件送入暂存区  
  commit -m "修改记录" 将文件提交到仓库  
  status 查看仓库现状  
@@ -12,4 +12,4 @@
  reflog 查看命令历史  
  checkout:  
         -- targetFileName 将工作区文件回退到版本库版本  
- rm 在版本库将文件删除  `
+ rm 在版本库将文件删除  
