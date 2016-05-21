@@ -1,1 +1,66 @@
+Date:
+	Date类内有一个Long型的fastTime成员，是1970年1月1日0点到现在的秒数
+	Method:
+		long getTime(),返回一个长整形值
+		void setTime(long),输入一个长整形值，设定时间
+		boolean equals(object),判断两个Date对象是否相等
+		boolean after(),时间是否后于目标对象
+		boolean before(),时间是否先于目标对象
+
+
+SimpleDateFormat:
+    介绍:
+        格式化时间
+    方法:
+        String format(Date),Date 转String   
+        Date parse(String),String 转Date
+    其他:
+        G   Era 标志符  Text    AD
+        y   年  Year    1996; 96
+        M   年中的月份  Month   July; Jul; 07
+        w   年中的周数  Number  27
+        W   月份中的周数    Number  2
+        D   年中的天数  Number  189
+        d   月份中的天数    Number  10
+        F   月份中的星期    Number  2
+        E   星期中的天数    Text    Tuesday; Tue
+        a   Am/pm  Text    PM
+        H   小时数（0-23）  Number  0
+        k   小时数（1-24）  Number  24
+        K   小时数（0-11）    Number  0
+        h   小时数（1-12）    Number  12
+        m   分钟数  Number  30
+        s   秒数    Number  55
+        S   毫秒数  Number  978
+        z   时区    General time zone   Pacific Standard Time; PST; GMT-08:00
+        Z   时区    RFC 822 time zone   -0800
+Calendar:
+    其中月份从0~11,星期由星期天到星期六为1~7
+    方法:
+        Date getTime(),获得当前Calendar对象对应的Date对象
+        void setTime(Date),使用Date对象设定Calendar对象
+        void add(int,int),对指定日历字段加减定值
+        int get(int),获取指定日历字段的值
+        void set(int,int),给指定的日历字段设置定值
+        void set(int,int,int),设置日历字段 YEAR、MONTH 和 DAY_OF_MONTH 的值.
+        void set(int,int,int,int,int),设置日历字段 YEAR、MONTH、DAY_OF_MONTH、HOUR_OF_DAY 和 MINUTE 的值.
+        void set(int,int,int,int,int,int),设置字段 YEAR、MONTH、DAY_OF_MONTH、HOUR、MINUTE 和 SECOND 的值.
+    其他:
+        YEAR,指示年的 get 和 set 的字段数字。
+        MONTH,指示月份的 get 和 set 的字段数字。
+        DAY_OF_MONTH,get 和 set 的字段数字，指示一个月中的某天。
+        DATE,get 和 set 的字段数字，指示一个月中的某天。
+        HOUR_OF_DAY,get 和 set 的字段数字，指示一天中的小时。
+        HOUR,get 和 set 的字段数字，指示上午或下午的小时。
+        MINUTE,get 和 set 的字段数字，指示一小时中的分钟。
+        SECOND,get 和 set 的字段数字，指示一分钟中的秒。
+        MILLISECOND,get 和 set 的字段数字，指示一秒中的毫秒。
+        AM_PM,get 和 set 的字段数字，指示 HOUR 是在中午之前还是在中午之后
+        AM,指示从午夜到中午之前这段时间的 AM_PM 字段值。
+        PM,指示从中午到午夜之前这段时间的 AM_PM 字段值。
+        DAY_OF_WEEK_IN_MONTH,get 和 set 的字段数字，指示当前月中的第几个星期。
+        DAY_OF_WEEK,get 和 set 的字段数字，指示一个星期中的某天。
+        DAY_OF_MONTH,get 和 set 的字段数字，指示一个月中的某天。
+        WEEK_OF_MONTH,get 和 set 的字段数字，指示当前月中的星期数。
+        WEEK_OF_YEAR,get 和 set 的字段数字，指示当前年中的星期数。
 
