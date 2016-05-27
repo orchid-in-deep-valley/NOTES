@@ -45,6 +45,7 @@ Calendar:
         void set(int,int,int),设置日历字段 YEAR、MONTH 和 DAY_OF_MONTH 的值.
         void set(int,int,int,int,int),设置日历字段 YEAR、MONTH、DAY_OF_MONTH、HOUR_OF_DAY 和 MINUTE 的值.
         void set(int,int,int,int,int,int),设置字段 YEAR、MONTH、DAY_OF_MONTH、HOUR、MINUTE 和 SECOND 的值.
+        int getActualMaximum(int),获取指定字段的最大值，如当前月份最多有多少天.
     其他:
         YEAR,指示年的 get 和 set 的字段数字。
         MONTH,指示月份的 get 和 set 的字段数字。
