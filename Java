@@ -64,4 +64,56 @@ Calendar:
         DAY_OF_MONTH,get 和 set 的字段数字，指示一个月中的某天。
         WEEK_OF_MONTH,get 和 set 的字段数字，指示当前月中的星期数。
         WEEK_OF_YEAR,get 和 set 的字段数字，指示当前年中的星期数。
+File:
+    方法:
+        属性类:
+            boolean isFile(),判断当前对象是不是一个文件.
+            boolean isDirectory(),判断当前对象是不是一个目录.
+            boolean isHidden(),判断当前对象是不是隐藏的.
+            boolean canRead(),判断当前对象是否可读.
+            boolean canWrite(),判断当前对象是否可写.
+            boolean exists(),判断文件是否存在.
+            long lastModified(),获取文件最后的修改时间
+            long length(),获取文件大小.
+            String getName(),获取文件名.
+            String getPath(),获取文件路径.
+        操作类:
+            boolean createNewFile(),根据对象属性创造一个文件.
+            boolean mkdir(),根据对象属性创造一个目录(如果一个或者多个上一级目录不存在则无法创建).
+            boolean mkdirs(),根据对象属性创造一个目录(如果一个或多个上一级目录不存在则创建出缺少的上一级目录和最次目录)
+            boolean delete(),删除对象说指向的文件或者目录.
+            File[] listFiles(),列出当前对象的所有子文件的文件对象.
+            String[] list(),列出单签对象的所有子文件的文件名.
+Exception:
+    分为两种Exception一种叫做checkException，一种叫做unCheckException,前者在编译阶段会检查，后者不检查。
+    catch 异常的时候越是子类越要放在前面,如果把父类放在前面的话捕捉异常时就会按照父类异常处理了.
+    try catch finally return 的执行顺序为try->catch->finally->return
+    returnType functionName()throws Exception{},其中throws的意义时把该方法中会出现的异常抛给调用出处理.
+AWT:
+    Frame:
+        方法:
+            void setSize(int,int),设置窗口大小.
+            void setLocation(int,int)设置窗口位置.
+            void setVisible(boolean)设置窗口是否显示.
+            void addWindowListener(WindowAdapter)设置窗口事件监听者:
+                WindowAdapter窗口事件接收者:
+                    方法:
+                        void WindowClosing(WindowsEvent),窗口关闭过程中调用该方法:
+                            void WindowClosing(WindowsEvent e)
+                            {
+                                System.exit(0);//关闭窗口并且停止程序
+                            }
+            void paint(Graphics)绘制方法.
+    Graphics:
+        方法:
+            drawLine()画线
+            drawRect()画矩形
+            drawOval()画圆
+            drawString()画字符串
+            fill~()填充矩形圆
+            setColor()设置画笔颜色,Color:
+                方法:Color(int,int,int)用RGB确定颜色.
+
+
+
 
