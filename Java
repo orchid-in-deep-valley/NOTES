@@ -1,3 +1,8 @@
+环境变量配置:
+	Windows:
+		JAVA_HOME:jdk安装路径
+		CLASSPATH:.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+		Path:头部添加%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
 Date:
 	Date类内有一个Long型的fastTime成员，是1970年1月1日0点到现在的秒数
 	Method:
