@@ -1,8 +1,68 @@
+数据类型：
+  Numbers（数字）
+  String（字符串）
+  List（列表）
+  Tuple（元组）
+  Dictionary（字典）
+
 列表：可二次读写，可读写序列
 列表创建：
   list_01 = [1,2,3,4,5]
 元组：不可二次读写，只读序列
 元组创建：
   tuple_01 = (1,2,3,4,5)
+ tips: range(start,stop)创建的序列是列表
+
+字典：键值对序列
+  创建及各种操作：
+    dict = {"Name":"Hari","Age":18,"id":1}; #创建字典
+    print dict                              
+    dict["Name"]="Mari"                     #修改指定数值
+    print dict
+    del dict["id"]                          #删除指定项
+    print dict
+    dict["id"] = 12                         #修改指定项数值
+    print dict
+    dict.clear()                            #清空字典
+    print dict
+
+for...else 条件循环
+例:
+  primeTuple = range(1,50)
+  for num in primeTuple:
+     for i in range(2,num):
+        if num%i == 0:                            #能够整除2时即为素数
+           if num/i == num%i:                     #排除2的特殊情况
+              continue                            #正常跳出
+           else:
+              print '%d not prime number.'%(num)  #打印非素数
+              break                               #非正常跳出
+     else:
+        print '%d is prime number'%(num)          #打印素数
+
+时间和日期：
+  使用前导入time模块：
+    import time
+  例：
+  import time
+
+#获得时间戳
+ticks = time.time()
+#获得时间元组
+localTime = time.localtime(ticks)
+#将时间元组转换成asc格式时间
+ascTime = time.asctime(localTime)
+print ascTime
+# 格式化成2016-03-20 11:45:39形式
+print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) 
+
+# 格式化成Sat Mar 28 22:24:24 2016形式
+print time.strftime("%a %b %d %H:%M:%S %Y", time.localtime()) 
   
-tips: range(start,stop)创建的序列是列表
+# 将格式字符串转换为时间戳
+a = "Sat Mar 28 22:24:24 2016"
+print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
+
+
+                        
+    
