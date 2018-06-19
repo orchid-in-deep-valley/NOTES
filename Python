@@ -13,6 +13,12 @@
   tuple_01 = (1,2,3,4,5)
  tips: range(start,stop)创建的序列是列表
 
+序列的生成:
+  使用range()函数;
+  如range(10,20)生成10到19
+    range(10,20,2)10到19间隔为2
+    
+    
 字典：键值对序列
   创建及各种操作：
     dict = {"Name":"Hari","Age":18,"id":1}; #创建字典
@@ -25,7 +31,24 @@
     print dict
     dict.clear()                            #清空字典
     print dict
-
+    
+索引迭代:
+  使用enumerate()函数:
+    dict = {
+      'Hari':10,
+      'Mari':20
+      }
+    for key,value in enumerate(dict):
+      print key,'-',value
+迭代字典中的value:
+  使用dict属性中的itervalues()函数:
+      dict = {
+      'Hari':10,
+      'Mari':20
+      }
+      for value in dict.itervalues():
+        print value
+        
 for...else 条件循环
 例:
   primeTuple = range(1,50)
