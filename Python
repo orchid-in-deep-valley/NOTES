@@ -144,3 +144,47 @@ python中时间日期格式化符号：
   #删除文件夹
   os.rmdir('Newdir')
 
+map函数:
+  map(function,list)
+ 对传入的序列逐一的放入funtion中再将结果以序列方式返回
+ 例：
+    def addition(num):
+    return num+2
+    list = map(addition,range(1,10))
+    for value in list:
+      print value
+    #输出	
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+      10
+      11
+reduce函数:
+  reduce(function,list)根据function对list进行浓缩，其中function需要两个参数
+  例：
+    >>> def func(x,y):
+      return x+y
+    >>> num = reduce(func,range(0,10))
+    >>> print num
+    45
+filter函数:
+  过滤器，filter(function,list),返回list中符合function要求的量
+  例：
+  >>> def filterFunc(value):
+	return value%2 == 0
+
+  >>> list = filter(filterFunc,range(0,10))
+  >>> print list
+  [0, 2, 4, 6, 8]
+lambda匿名函数:
+  lambda 函数参数:表达式
+  例：
+  >>> list = filter(lambda x:x%2==0,range(0,10))
+  >>> prrint list
+  >>> print list
+  [0, 2, 4, 6, 8]
+
