@@ -187,4 +187,3 @@ lambda匿名函数:
   >>> prrint list
   >>> print list
   [0, 2, 4, 6, 8]
-
