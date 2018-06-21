@@ -187,3 +187,27 @@ lambda匿名函数:
   >>> prrint list
   >>> print list
   [0, 2, 4, 6, 8]
+  
+类:
+	__metaclass__ = type   ,说明下面定义的类都是新式类
+	
+	@staticmethod    下面生成的方法是静态方法，不使用到类和实例时使用
+	
+	@calssmethod    类方法,使用到类时使用
+	
+	
+	eg:
+		__metaclass__ = type
+		class Animal:
+			num = 0
+			def __init__(self,name):
+				self.name = name
+				Animal.num += 1
+			@classmethod
+			def addNum(cls,num):
+				cls.num += num
+			@staticmethod
+			def eat():
+				print 'nmmmm...nummmmm...'
+		
+		Animal.addNum9
